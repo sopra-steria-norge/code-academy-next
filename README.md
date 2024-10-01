@@ -21,6 +21,8 @@ Vi jukser litt og benytter oss av et script for å sette opp det grunnleggende. 
 
 __1:__ `npx create-next-app@latest basic-next --typescript`
 
+**Merk:** dette lager en ny mappe `basic-next`. 
+
 ```bash
 ? Would you like to use ESLint? » No / Yes                                  (Yes)
 ? Would you like to use Tailwind CSS? » No / Yes                            (No)
@@ -258,6 +260,7 @@ __9:__ Vi antar at de fleste av dere er kjent med Git og Github, så opprett et 
 Det er flere måter vi kan deploye en Next.js applikasjon, men for enkelthetens skyld vil vi i denne workshopen deploye den med Vercel. Vercel har en hobby-tier som er ypperlig for vår bruk. Om du ikke har gjort det på forhånd kan du gå til [vercel.com/new](https://vercel.com/new) og velge "Continue with Github". Her velger du repoet du pushet koden til. Det kan hende du må gi Vercel tilgang til riktige repoer for at det skal dukke opp i listen.
 
 __10:__ Opprett en hobby-konto hos Vercel, om du ikke har en fra før.
+
 __11:__ Fortsett med Github, og gi Vercel tilgang til repoet du pushet til i steg 9.
 
 Når repoet du opprettet er listet opp, trykk på `Import`for å begynne oppsettet.
@@ -282,6 +285,7 @@ __Docker container__ - Next kan bygges og deployes som en docker-container. Men 
 Om du har Docker installert på maskinen kan du bygge og kjøre prosjketet som en Docker-container
 
 __13:__ Kopier inn `Dockerfile` fra dette repoet til roten på prosjektet, et helt enkelt oppsett som kjører appen med nodejs. 
+
 __14:__ Legg til `output: "standalone"` i `next.config.mjs`, evt. se eksempelfilen `next.config.mjs` i dette repoet:
 
 ```js
