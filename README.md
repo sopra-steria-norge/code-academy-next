@@ -474,8 +474,6 @@ import { useSession } from "next-auth/react";
 
 const User = () => {
   const { data: session, status } = useSession();
-  console.log("status", status)
-  console.log("session", session)
   return <div>
     <br />
     <br />
