@@ -181,12 +181,6 @@ export default function RootLayout({
 
 ---
 
-#### 5: src/app/about/[name]/page.tsx
-
-Og om du får utslett av at det er så og si ustilet, kan du stile den selv, eller legge inn `header.module.css` filen fra dette repoet ved siden av `Header.tsx`. Generert av ChatGPT. Men fokuset i denne workshopen er ikke html og sminke. 💄
-
----
-
 #### 6: src/app/about/[name]/page.tsx
 
 Routes kan også være dynamiske, ved å bruke `[]` i mappenavnene. For eksempel kan vi legge en mappe i `about` og kalle den `[name]` og legge en `page.tsx` fil i den: 🔀
@@ -618,7 +612,6 @@ Opprett filen `src/app/components/header/CurrentUser.tsx` som nedenfor: 👤
 
 import { useSession } from "next-auth/react";
 import Link from "next/link";
-import styles from "./header.module.css";
 
 const CurrentUser = () => {
   const { data: session, status } = useSession()
